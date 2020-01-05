@@ -9,6 +9,8 @@
     </van-list>
     <br>
     <van-button block type="default" @click="toAddressEditHandler">添加</van-button>
+    <br>
+    <van-button block type="default" @click="toDeleteHandler">删除</van-button>
   </briup-fulllayout>
 </template>
 
@@ -42,6 +44,9 @@ export default {
     toAddressEditHandler(){
       // 编程跳转
       this.$router.push("/manager/address_edit");
+    },
+    toDeleteHandler(){
+      
     }
   }
 }
