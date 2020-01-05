@@ -1,3 +1,4 @@
+
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 // 管理页面
@@ -10,7 +11,9 @@ import Login from '../views/Login'
 import { getToken } from '../utils/auth'
 import { Toast } from 'vant'
 import store from '../store'
-
+// 地址
+import AddressList from '../views/manager/address/List'
+import AddressEdit from '../views/manager/address/Edit'
 
 Vue.use(VueRouter)
 
@@ -47,6 +50,12 @@ const routes = [
     },{
       path: 'user',
       component: User,
+    },{
+      path: 'address',
+      component: AddressList,
+    },{
+      path: 'address_edit',
+      component: AddressEdit,
     }]
   },
   {
